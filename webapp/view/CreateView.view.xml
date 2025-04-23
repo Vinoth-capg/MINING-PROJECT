@@ -1,0 +1,29 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" controllerName="app.miningdetails.controller.CreateView" displayBlock="true">
+<Page id="idCreatePage" title="{i18n>titleCreate}" showNavButton="true" navButtonPress="onToMining">
+<f:SimpleForm editable="true">
+    <Label text="{i18n>LocationId}" required="true"/>
+    <Input id="idLocIdCr"/>
+
+    <Label text="{i18n>Description}" required="true"/>
+    <Input id="idLocDescCr"/>
+
+    <Label text="{i18n>MineralResource}" required="true"/>
+    <Input id="idResAllocCr"/>
+
+    <Label text="{i18n>TotalCost}"/>
+    <Input id="idTotcostCr"/>
+
+    <Label text="{i18n>ReportOfMinerals}"/>
+    <Input id="idRepPossCr"/>
+
+    <Label text="{i18n>NoOfDrills}"/>
+    <Input id="idDrillsCr"/>
+
+    <Label text="{i18n>TypeOfMineral}"/>
+    <Input id="idTypeCr"/>
+
+
+    <Button text="{i18n>create}" type="Emphasized" press="onSubmit"/>
+</f:SimpleForm>
+</Page>
+</mvc:View>

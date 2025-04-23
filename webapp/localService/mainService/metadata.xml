@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="Z49279_MINING_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="Z9279_MINING" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="LocationId"/>
+                    <PropertyRef Name="Description"/>
+                    <PropertyRef Name="MineralResource"/>
+                </Key>
+                <Property Name="LocationId" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="LOCATION_ID DETAILS" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Description" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="location description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="MineralResource" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="MINERAL RESOUCE INFO" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TotalCost" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="TOTAL COST OF MINING" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ReportOfMinerals" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="MINERALS REPORT" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="NoOfDrills" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="DRILLS COUNT" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TypeOfMineral" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="MINERAL TYPES" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityContainer Name="Z49279_MINING_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="Z9279_MININGSet" EntityType="Z49279_MINING_SRV.Z9279_MINING" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link rel="self" href="http://zin-blr-srv1:8001/sap/opu/odata/sap/Z49279_MINING_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="http://zin-blr-srv1:8001/sap/opu/odata/sap/Z49279_MINING_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

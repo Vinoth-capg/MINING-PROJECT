@@ -1,0 +1,30 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" controllerName="app.miningdetails.controller.UpdateView" displayBlock="true">
+<Page id="idUpdatePage" title="{i18n>Update}" showNavButton="true" navButtonPress="onToMining">
+<f:SimpleForm editable="true">
+    <Label text="LocationId"  />
+    <Input value="{MiningDetails>LocationId}" id="idLocIdup" enabled="false"/>
+
+    <Label text="Description" />
+    <Input value="{MiningDetails>Description}" id="idLocDesup" enabled="false"/>
+
+    <Label text="MineralResource" />
+    <Input value="{MiningDetails>MineralResource}" id="idResAllocup" enabled="false"/>
+
+    <Label text="TotalCost"/>
+    <Input value="{MiningDetails>TotalCost}" id="idTotcostup" enabled="false"/>
+
+     <Label text="ReportOfMinerals"/>
+    <Input value="{MiningDetails>ReportOfMinerals}" id="idRepPossup"/>
+
+    <Label text="NoOfDrills"/>
+    <Input value="{MiningDetails>NoOfDrills}" id="idDrillsup"/>
+
+    <Label text="TypeOfMineral"/>
+    <Input value="{MiningDetails>TypeOfMineral}" id="idTypeup"/>
+
+   
+
+    <Button text="{i18n>Update}" type="Emphasized" press="onUpdate" width="80px"/>
+</f:SimpleForm>
+</Page>
+</mvc:View>

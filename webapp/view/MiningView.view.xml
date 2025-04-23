@@ -1,0 +1,72 @@
+<mvc:View controllerName="app.miningdetails.controller.MiningView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="idAd" title="Mining Details">
+    <subHeader>
+<OverflowToolbar>
+<SearchField search="onSearch" liveChange="onSearch"/>
+</OverflowToolbar>
+</subHeader>
+    
+<Table id="idMiningTab" items="{MiningDetails>/}" mode="SingleSelectMaster" selectionChange="onItemSelect">
+    <columns>
+        <!-- <Column>
+        <Text text="{i18n>Mandt}"/>
+        </Column> -->
+
+        <Column>
+        <Text text="{i18n>LocationId}"/>
+        </Column>
+
+        <Column>
+        <Text text="{i18n>Description}"/>
+        </Column>
+
+        <Column>
+        <Text text="{i18n>MineralResource}"/>
+        </Column>
+
+        <Column>
+        <Text text="{i18n>TotalCost}"/>
+        </Column>
+
+        <Column>
+        <Text text="{i18n>ReportOfMinerals}"/>
+        </Column>
+
+        <Column>
+        <Text text="{i18n>NoOfDrills}"/>
+        </Column>
+
+        <Column>
+        <Text text="{i18n>TypeOfMineral}"/>
+        </Column>
+
+      
+        <Column>
+        <Text text="Action"/>
+        </Column>
+    </columns>
+<ColumnListItem>
+    <cells>
+         <!-- <Text text="{MiningDetails>Mandt}"/> -->
+        <Text text="{MiningDetails>LocationId}"/>
+        <Text text="{MiningDetails>Description}"/>
+        <Text text="{MiningDetails>MineralResource}"/>
+        <Text text="{MiningDetails>TotalCost}"/>
+        <Text text="{MiningDetails>ReportOfMinerals}"/>
+        <Text text="{MiningDetails>NoOfDrills}"/>
+        <Text text="{MiningDetails>TypeOfMineral}"/>
+      
+        <Button icon="sap-icon://delete" press="onDelete" type="Reject"/>
+    </cells>
+</ColumnListItem>
+</Table>
+    <footer>
+        <OverflowToolbar>
+        <ToolbarSpacer/>
+          <Button text="Create" press="onCreate"/>
+        </OverflowToolbar>
+    </footer>
+</Page>
+</mvc:View>
